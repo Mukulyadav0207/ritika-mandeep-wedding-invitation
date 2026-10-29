@@ -14,9 +14,9 @@ const siteUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Mandeep & Ritika — Wedding Invitation",
+  title: "Ritika & Mandeep — Wedding Invitation",
   description:
-    "With love and joy, we invite you to celebrate the wedding of Mandeep & Ritika on 26 November 2026.",
+    "With love and joy, we invite you to celebrate the wedding of Ritika & Mandeep on 26 November 2026.",
   alternates: {
     canonical: "/",
   },
@@ -30,29 +30,29 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    siteName: "Mandeep & Ritika Wedding Invitation",
-    title: "Mandeep & Ritika — Wedding Invitation",
+    siteName: "Ritika & Mandeep Wedding Invitation",
+    title: "Ritika & Mandeep — Wedding Invitation",
     description:
-      "With love and joy, we invite you to celebrate the wedding of Mandeep & Ritika on 26 November 2026.",
+      "With love and joy, we invite you to celebrate the wedding of Ritika & Mandeep on 26 November 2026.",
     images: [
       {
         url: "/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Mandeep and Ritika's wedding invitation for 26 November 2026",
+        alt: "Ritika and Mandeep's wedding invitation for 26 November 2026",
         type: "image/webp",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mandeep & Ritika — Wedding Invitation",
+    title: "Ritika & Mandeep — Wedding Invitation",
     description:
-      "With love and joy, we invite you to celebrate the wedding of Mandeep & Ritika on 26 November 2026.",
+      "With love and joy, we invite you to celebrate the wedding of Ritika & Mandeep on 26 November 2026.",
     images: [
       {
         url: "/og-image.webp",
-        alt: "Mandeep and Ritika's wedding invitation for 26 November 2026",
+        alt: "Ritika and Mandeep's wedding invitation for 26 November 2026",
       },
     ],
   },

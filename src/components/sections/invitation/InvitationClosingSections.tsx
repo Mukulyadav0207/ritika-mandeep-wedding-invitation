@@ -1,13 +1,13 @@
 "use client";
 
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import {
   useEffect,
   useRef,
   useState,
   type CSSProperties,
-  type FormEvent,
+  // type FormEvent,
 } from "react";
 import { closingContent } from "./closingData";
 import { familyIntro } from "./familyData";
@@ -148,7 +148,7 @@ export function StoryMomentsSection() {
                   src={src}
                   width={width}
                   height={height}
-                  alt={`Mandeep and Ritika memory ${index + 1}`}
+                  alt={`Ritika and Mandeep memory ${index + 1}`}
                   loading={index < 2 ? "eager" : "lazy"}
                   sizes="(max-width: 760px) 42vw, 180px"
                 />
@@ -322,16 +322,16 @@ export function FamilyLoveSection() {
           <article
             className={`${styles.familyBlock} ${styles.familyBlockGroom}`}
           >
-            <p className={styles.familyName}>{groom.name}</p>
+            <p className={styles.familyName}>{bride.name}</p>
             <p className={styles.familyGrandparentsLabel}>
-              {groom.grandparentsLabel}
+              {bride.grandparentsLabel}
             </p>
-            <p className={styles.familyParents}>{groom.grandparents}</p>
-            <p className={styles.familyRelation}>{groom.parentsLabel}</p>
-            <p className={styles.familyParents}>{groom.parents}</p>
+            <p className={styles.familyParents}>{bride.grandparents}</p>
+            <p className={styles.familyRelation}>{bride.parentsLabel}</p>
+            <p className={styles.familyParents}>{bride.parents}</p>
             <span className={styles.familySeparator} aria-hidden="true" />
-            <p className={styles.familySiblingLabel}>{groom.siblingLabel}</p>
-            <p className={styles.familySiblings}>{groom.siblings}</p>
+            <p className={styles.familySiblingLabel}>{bride.siblingLabel}</p>
+            <p className={styles.familySiblings}>{bride.siblings}</p>
           </article>
 
           <div
@@ -363,16 +363,16 @@ export function FamilyLoveSection() {
           <article
             className={`${styles.familyBlock} ${styles.familyBlockBride}`}
           >
-            <p className={styles.familyName}>{bride.name}</p>
+            <p className={styles.familyName}>{groom.name}</p>
             <p className={styles.familyGrandparentsLabel}>
-              {bride.grandparentsLabel}
+              {groom.grandparentsLabel}
             </p>
-            <p className={styles.familyParents}>{bride.grandparents}</p>
-            <p className={styles.familyRelation}>{bride.parentsLabel}</p>
-            <p className={styles.familyParents}>{bride.parents}</p>
+            <p className={styles.familyParents}>{groom.grandparents}</p>
+            <p className={styles.familyRelation}>{groom.parentsLabel}</p>
+            <p className={styles.familyParents}>{groom.parents}</p>
             <span className={styles.familySeparator} aria-hidden="true" />
-            <p className={styles.familySiblingLabel}>{bride.siblingLabel}</p>
-            <p className={styles.familySiblings}>{bride.siblings}</p>
+            <p className={styles.familySiblingLabel}>{groom.siblingLabel}</p>
+            <p className={styles.familySiblings}>{groom.siblings}</p>
           </article>
         </div>
 
@@ -441,12 +441,14 @@ export function ClosingSection() {
             <span key={line}>{line}</span>
           ))}
         </p>
-        <WishesForm />
+        {/* Send Your Wishes form disabled */}
+        {/* <WishesForm /> */}
       </div>
     </section>
   );
 }
 
+/*
 function WishesForm() {
   const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<
@@ -575,3 +577,4 @@ function WishesForm() {
     </form>
   );
 }
+*/

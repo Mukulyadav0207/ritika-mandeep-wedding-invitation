@@ -147,7 +147,12 @@
 .card:hover .image { transform: scale(1.035); }
 
 .details { padding: clamp(20px, 3vw, 28px); }
-.details h3 { margin-top: 7px; font-size: clamp(2.3rem, 4vw, 3.25rem); line-height: .9; }
+.details h3 {
+  margin-top: 7px;
+  font-size: clamp(1.85rem, 3.15vw, 2.35rem);
+  line-height: 1;
+  white-space: nowrap;
+}
 
 .cardRevealed .details > * { opacity: 1; transform: none; }
 .cardRevealed .date { transition-delay: calc(var(--event-delay) + 920ms); }
@@ -187,7 +192,7 @@
     }
     .imageWrap { aspect-ratio: 1.62; }
     .details { padding: 15px; }
-    .details h3 { font-size: clamp(1.82rem, 9vw, 2.3rem); }
+    .details h3 { font-size: clamp(1.22rem, 5.4vw, 1.62rem); }
     .meta { margin-top: 12px; gap: 8px; font-size: .78rem; }
     .header > *,
     .details > *,

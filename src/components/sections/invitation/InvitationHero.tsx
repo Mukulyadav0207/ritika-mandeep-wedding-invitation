@@ -770,7 +770,7 @@ export default function InvitationHero({
       <section
         id="home"
         className={`${styles.hero} ${!cinematic ? styles.heroWithAnnouncement : ""}`}
-        aria-label="Mandeep and Ritika's wedding invitation"
+        aria-label="Ritika and Mandeep's wedding invitation"
       >
         {!cinematic && (
           <div className={styles.weddingAnnouncement}>
@@ -785,8 +785,8 @@ export default function InvitationHero({
                 <Image
                   className={styles.logo}
                   src="/assets/images/bg/invite-logo.webp"
-                  width={1254}
-                  height={1254}
+                  width={1536}
+                  height={1024}
                   alt=""
                   priority
                   sizes="(max-width: 760px) 96px, 144px"
@@ -794,11 +794,11 @@ export default function InvitationHero({
               </span>
             </button>
             {/* <h1 className={styles.announcementNames}>
-              <span>Mandeep</span>
+              <span>Ritika</span>
               <span className={styles.announcementAmp} aria-hidden="true">
                 &amp;
               </span>
-              <span>Ritika</span>
+              <span>Mandeep</span>
             </h1> */}
             {/* <div className={styles.announcementDivider} aria-hidden="true"><span />✦<span /></div> */}
             <div className={styles.announcementText}>
@@ -817,9 +817,9 @@ export default function InvitationHero({
             We cordially invite you to witness the beginning of our forever and
             celebrate the wedding ceremony of
           </p>
-          <h1 className={styles.name}>Mandeep</h1>
+          <h1 className={styles.name}>Ritika</h1>
           <p className={styles.with}>weds</p>
-          <p className={styles.name}>Ritika</p>
+          <p className={styles.name}>Mandeep</p>
         </div>
         <div ref={visualRef} className={styles.visual}>
           <figure className={styles.portrait}>
@@ -828,7 +828,7 @@ export default function InvitationHero({
               src="/assets/images/bg/mr-photo.webp"
               width={1023}
               height={1537}
-              alt="Mandeep and Ritika"
+              alt="Ritika and Mandeep"
               priority
               sizes="(max-width: 760px) min(340px, 100vw), 420px"
             />

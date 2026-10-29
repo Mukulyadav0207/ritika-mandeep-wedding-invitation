@@ -31,8 +31,8 @@ export const familyIntro = {
     siblings: "Tarun Yadav",
   },
   monogram: {
-    left: "M",
-    right: "R",
+    left: "R",
+    right: "M",
   },
   footer: {
     lines: ["Raised with love,", "United by destiny,"],

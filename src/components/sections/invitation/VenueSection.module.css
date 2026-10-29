@@ -142,35 +142,20 @@
 .venueTitle {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: clamp(6px, 2.2cqw, 12px);
+  justify-content: center;
   width: 100%;
   margin: 0;
-  padding-left: 4%;
-  line-height: 1;
-}
-
-.venueIndex {
-  flex: 0 0 auto;
-  color: var(--venue-wine);
-  font-family: var(--font-playfair-display), Georgia, "Times New Roman", serif;
-  font-size: clamp(0.72rem, 8.8cqw, 1.45rem);
-  font-weight: 600;
-  font-style: italic;
-  font-variant-numeric: lining-nums tabular-nums;
-  letter-spacing: 0.04em;
   line-height: 1;
 }
 
 .venueLabel {
-  flex: 1 1 auto;
-  min-width: 0;
   color: var(--venue-wine);
   font-family: var(--font-great-vibes), "Brush Script MT", cursive;
   font-size: clamp(0.88rem, 13.5cqw, 2.45rem);
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1;
+  text-align: center;
 }
 
 .venueDivider {
@@ -280,24 +265,29 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(3px, 1.6cqw, 7px);
-  margin-top: clamp(4px, 2.8cqw, 12px);
-  padding: clamp(4px, 2.4cqw, 10px) clamp(7px, 4.2cqw, 16px);
-  border: 1px solid rgba(49, 74, 54, 0.35);
+  gap: clamp(4px, 2cqw, 9px);
+  margin-top: clamp(14px, 5cqw, 26px);
+  padding: clamp(7px, 3.2cqw, 14px) clamp(10px, 5.4cqw, 22px);
+  border: 1.5px solid rgba(255, 250, 243, 0.45);
   border-radius: 999px;
   background: linear-gradient(
     135deg,
-    var(--venue-green-deep) 0%,
+    #2f4635 0%,
+    var(--venue-green-deep) 42%,
     var(--venue-green) 100%
   );
-  box-shadow: 0 5px 12px rgba(49, 74, 54, 0.2);
-  color: var(--venue-cream);
+  box-shadow:
+    0 2px 0 rgba(255, 250, 243, 0.12) inset,
+    0 6px 16px rgba(35, 52, 40, 0.35),
+    0 2px 6px rgba(35, 52, 40, 0.22);
+  color: #fffaf3;
   font-family: var(--font-playfair-display), Georgia, "Times New Roman", serif;
-  font-size: clamp(0.34rem, 3.8cqw, 0.64rem);
-  font-weight: 600;
-  letter-spacing: 0.11em;
-  line-height: 1;
+  font-size: clamp(0.42rem, 4.8cqw, 0.82rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.05;
   text-decoration: none;
+  text-shadow: 0 1px 2px rgba(20, 32, 24, 0.35);
   text-transform: uppercase;
   touch-action: manipulation;
   -webkit-tap-highlight-color: rgba(62, 90, 68, 0.2);
@@ -308,14 +298,18 @@
 }
 
 .directions svg {
-  width: clamp(7px, 3.8cqw, 13px);
-  height: clamp(7px, 3.8cqw, 13px);
+  width: clamp(9px, 4.6cqw, 16px);
+  height: clamp(9px, 4.6cqw, 16px);
+  filter: drop-shadow(0 1px 1px rgba(20, 32, 24, 0.25));
 }
 
 .directions:hover,
 .directions:focus-visible {
-  background: linear-gradient(135deg, #2a4030 0%, #355242 100%);
-  box-shadow: 0 7px 16px rgba(49, 74, 54, 0.26);
+  background: linear-gradient(135deg, #243628 0%, #2a4030 45%, #355242 100%);
+  box-shadow:
+    0 2px 0 rgba(255, 250, 243, 0.14) inset,
+    0 8px 20px rgba(35, 52, 40, 0.42),
+    0 3px 8px rgba(35, 52, 40, 0.28);
   transform: translateY(-1px);
   outline: none;
 }
@@ -382,12 +376,7 @@
   }
 
   .venueTitle {
-    padding-left: 2%;
-    gap: clamp(4px, 1.8cqw, 8px);
-  }
-
-  .venueIndex {
-    font-size: clamp(0.62rem, 7.8cqw, 0.95rem);
+    gap: 0;
   }
 
   .venueLabel {
@@ -433,15 +422,15 @@
   }
 
   .directions {
-    margin-top: 4px;
-    padding: 3px 7px;
-    font-size: clamp(0.32rem, 3.4cqw, 0.5rem);
-    letter-spacing: 0.08em;
+    margin-top: clamp(12px, 5.5vw, 18px);
+    padding: clamp(6px, 3.6cqw, 10px) clamp(9px, 5.8cqw, 14px);
+    font-size: clamp(0.4rem, 4.4cqw, 0.58rem);
+    letter-spacing: 0.1em;
   }
 
   .directions svg {
-    width: 7px;
-    height: 7px;
+    width: clamp(8px, 4.2cqw, 11px);
+    height: clamp(8px, 4.2cqw, 11px);
   }
 }
 

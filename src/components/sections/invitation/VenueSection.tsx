@@ -40,8 +40,8 @@ export default function VenueSection({
       aria-labelledby="venue-section-title"
     >
       <header className={styles.header}>
-        <p>Where We Celebrate</p>
-        <h2 id="venue-section-title">Three Places, One Celebration</h2>
+        <p>ONE BEAUTIFUL BEGINNING</p>
+        <h2 id="venue-section-title">Where Dreams Become Forever</h2>
         <span aria-hidden="true">✦</span>
       </header>
       <div className={styles.journey}>
@@ -64,9 +64,6 @@ export default function VenueSection({
               />
               <div className={styles.venueDetailsPanel}>
                 <header className={styles.venueTitle}>
-                  <span className={styles.venueIndex}>
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
                   <span className={styles.venueLabel}>{venue.label}</span>
                 </header>
                 <div className={styles.venueDivider} aria-hidden="true">

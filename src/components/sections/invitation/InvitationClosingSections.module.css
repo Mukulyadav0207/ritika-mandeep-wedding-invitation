@@ -956,6 +956,7 @@ transform: rotate(22deg);
   letter-spacing: 0.02em;
 }
 
+/* Send Your Wishes form — disabled
 .wishesForm {
   display: grid;
   gap: 13px;
@@ -1087,6 +1088,7 @@ transform: rotate(22deg);
   color: rgba(58, 80, 104, 0.72);
   font-size: 0.76rem;
 }
+*/
 
 .closingContent > * {
   opacity: 0;
@@ -1126,11 +1128,13 @@ transform: rotate(22deg);
   transition-delay: 0.62s;
 }
 
+/*
 .closingVisible .wishesForm {
   opacity: 1;
   transform: none;
   transition-delay: 0.46s;
 }
+*/
 
 @media (max-width: 760px) {
   .section {
@@ -1448,6 +1452,7 @@ transform: rotate(22deg);
     font-size: clamp(1.65rem, 6.8vw, 2.2rem);
   }
 
+  /*
   .wishesForm {
     width: min(100%, 23rem);
     margin-top: 22px;
@@ -1461,6 +1466,7 @@ transform: rotate(22deg);
   .wishesForm button {
     width: 100%;
   }
+  */
 }
 
 @media (min-width: 761px) {
@@ -1633,6 +1639,7 @@ transform: rotate(22deg);
     font-size: clamp(3.25rem, 5.8vw, 5.25rem);
   }
 
+  /*
   .wishesForm {
     width: min(100%, 44rem);
     padding: clamp(28px, 3.2vw, 40px);
@@ -1657,6 +1664,7 @@ transform: rotate(22deg);
     padding: 13px 28px;
     font-size: clamp(0.82rem, 1vw, 0.98rem);
   }
+  */
 }
 
 @media (min-width: 1800px) {
