@@ -67,8 +67,8 @@ export const events: readonly WeddingEvent[] = [
     title: 'The Ceremonial Journey',
     date: '26 November 2026',
     times: [
-      'Baraat & Welcome — 7:00 PM',
-      'Dinner — 8:00 PM',
+      'Baraat & Welcome — 6:00 PM',
+      'Dinner — 7:00 PM',
       'Varmala — 11:00 PM',
       'Mangal Pheras — 2:00 AM',
     ],

@@ -42,6 +42,16 @@ const jobs = [
     resize: { width: 1024, height: 1536 },
     options: { quality: 86, effort: 6 },
   },
+  {
+    input: "public/assets/images/events/pheras1.png",
+    output: "public/assets/images/events/barat.webp",
+    options: { quality: 86, effort: 6 },
+  },
+  {
+    input: "public/assets/images/events/pheras2.png",
+    output: "public/assets/images/events/barat-night.webp",
+    options: { quality: 86, effort: 6 },
+  },
 ];
 
 async function optimize({ input, output, options, resize }) {
