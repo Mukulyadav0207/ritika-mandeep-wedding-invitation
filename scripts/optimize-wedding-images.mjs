@@ -30,6 +30,18 @@ const jobs = [
     resize: { width: 960, height: 1440 },
     options: { quality: 85, effort: 6 },
   },
+  {
+    input: "public/assets/images/gallery/img4.jpeg",
+    output: "public/assets/images/gallery/img4.webp",
+    resize: { width: 960, height: 1280 },
+    options: { quality: 85, effort: 6 },
+  },
+  {
+    input: "public/assets/images/bg/mr-photo.jpeg",
+    output: "public/assets/images/bg/mr-photo.webp",
+    resize: { width: 1024, height: 1536 },
+    options: { quality: 86, effort: 6 },
+  },
 ];
 
 async function optimize({ input, output, options, resize }) {

@@ -826,8 +826,8 @@ export default function InvitationHero({
             <Image
               className={styles.couplePhoto}
               src="/assets/images/bg/mr-photo.webp"
-              width={1023}
-              height={1537}
+              width={1024}
+              height={1536}
               alt="Ritika and Mandeep"
               priority
               sizes="(max-width: 760px) min(340px, 100vw), 420px"

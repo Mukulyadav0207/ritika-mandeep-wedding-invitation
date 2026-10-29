@@ -646,8 +646,9 @@
   height: 90%;
   border-radius: inherit;
   object-fit: cover;
-  /* object-position: center 22%; */
-  translate: var(--parallax-near-x, 0px) var(--parallax-near-y, 0px);
+  object-position: center 38%;
+  translate: var(--parallax-near-x, 0px)
+    calc(var(--parallax-near-y, 0px) - clamp(8px, 2.2cqw, 16px));
   transition: translate 0.45s ease-out;
 }
 
@@ -877,6 +878,11 @@
   .couplePhoto {
     translate: none;
     transition: transform 0.45s ease;
+  }
+
+  .couplePhoto {
+    object-position: center 100%;
+    transform: translateY(-3%);
   }
 
   .background::after {
