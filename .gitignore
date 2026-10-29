@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Image sources under public/ (commit optimized .webp only; re-run scripts/optimize-wedding-images.mjs)
+public/**/*.png
+public/**/*.PNG
+public/**/*.jpg
+public/**/*.JPG
+public/**/*.jpeg
+public/**/*.JPEG
+!public/favicon.png

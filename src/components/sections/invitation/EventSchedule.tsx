@@ -74,8 +74,8 @@ export const events: readonly WeddingEvent[] = [
     ],
     venue: 'Raj Resort',
     location: 'NH58 Meerut',
-    image: '/assets/images/events/barat.webp',
-    nightImage: '/assets/images/events/barat-night.webp',
+    image: '/assets/images/events/pheras1.webp',
+    nightImage: '/assets/images/events/pheras2.webp',
     alternateSwapDelayMs: 3500,
   },
 ] as const;
