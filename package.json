@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "optimize:images": "node scripts/optimize-wedding-images.mjs && python3 scripts/generate-og-image.py"
+    "optimize:images": "node scripts/optimize-wedding-images.mjs && (node scripts/optimize-og-image.mjs || python3 scripts/generate-og-image.py)"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

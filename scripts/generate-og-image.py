@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate public/og-image.webp with correct name/ampersand layout."""
+"""Regenerate public/og-image2.webp when no custom og-image2 source exists."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "public" / "og-image.webp"
+OUT = ROOT / "public" / "og-image2.webp"
 PHOTO = ROOT / "public" / "assets" / "images" / "bg" / "mr-photo.webp"
 
 WIDTH, HEIGHT = 1200, 630
@@ -185,9 +185,30 @@ def build_from_photo() -> Image.Image:
     return composed
 
 
+def find_custom_source() -> Path | None:
+    for name in (
+        "og-image2.png",
+        "og-image2.jpg",
+        "og-image2.jpeg",
+        "og-image2.PNG",
+        "og-image2.JPG",
+        "og-image2.JPEG",
+    ):
+        path = ROOT / "public" / name
+        if path.exists():
+            return path
+    return None
+
+
 def main() -> None:
-    original = load_original()
-    image = patch_names_on_original(original) if original is not None else build_from_photo()
+    custom = find_custom_source()
+    if custom is not None:
+        image = fit_cover(Image.open(custom).convert("RGB"), WIDTH, HEIGHT)
+        image.save(OUT, format="WEBP", quality=92)
+        print(f"Wrote {OUT} from {custom.name}")
+        return
+
+    image = build_from_photo()
     image.convert("RGB").save(OUT, format="WEBP", quality=92)
     print(f"Wrote {OUT}")
 

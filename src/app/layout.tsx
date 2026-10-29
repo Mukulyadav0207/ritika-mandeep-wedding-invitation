@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "With love and joy, we invite you to celebrate the wedding of Ritika & Mandeep on 26 November 2026.",
     images: [
       {
-        url: "/og-image.webp",
+        url: "/og-image2.webp",
         width: 1200,
         height: 630,
         alt: "Ritika and Mandeep's wedding invitation for 26 November 2026",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       "With love and joy, we invite you to celebrate the wedding of Ritika & Mandeep on 26 November 2026.",
     images: [
       {
-        url: "/og-image.webp",
+        url: "/og-image2.webp",
         alt: "Ritika and Mandeep's wedding invitation for 26 November 2026",
       },
     ],

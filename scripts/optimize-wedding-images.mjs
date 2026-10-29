@@ -3,7 +3,7 @@
  * Sources (*.png, *.jpg, *.jpeg) are gitignored; commit the .webp outputs only.
  *
  * Run: node scripts/optimize-wedding-images.mjs
- * Then: python3 scripts/generate-og-image.py  (og-image uses mr-photo.webp)
+ * Then: node scripts/optimize-og-image.mjs  (or generate-og-image.py fallback)
  */
 import { readdir, stat, mkdir } from "node:fs/promises";
 import path from "node:path";
